@@ -1341,8 +1341,7 @@ export function Settings() {
       </ListItem>
     </>
   );
-  const lflytekConfigComponent = accessStore.provider ===
-    ServiceProvider.Iflytek && (
+  const lflytekConfigComponent = (
     <>
       <ListItem
         title={Locale.Settings.Access.Iflytek.Endpoint.Title}
