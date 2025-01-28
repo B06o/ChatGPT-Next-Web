@@ -858,7 +858,6 @@ export function Settings() {
         subTitle={Locale.Settings.Access.Google.ApiKey.SubTitle}
       >
         <PasswordInput
-          aria-label={Locale.Settings.Access.Google.ApiKey.Title}
           value={accessStore.googleApiKey}
           type="text"
           placeholder={Locale.Settings.Access.Google.ApiKey.Placeholder}
@@ -870,27 +869,10 @@ export function Settings() {
         />
       </ListItem>
       <ListItem
-        title={Locale.Settings.Access.Google.ApiVersion.Title}
-        subTitle={Locale.Settings.Access.Google.ApiVersion.SubTitle}
-      >
-        <input
-          aria-label={Locale.Settings.Access.Google.ApiVersion.Title}
-          type="text"
-          value={accessStore.googleApiVersion}
-          placeholder="2023-08-01-preview"
-          onChange={(e) =>
-            accessStore.update(
-              (access) => (access.googleApiVersion = e.currentTarget.value),
-            )
-          }
-        ></input>
-      </ListItem>
-      <ListItem
         title={Locale.Settings.Access.Google.GoogleSafetySettings.Title}
         subTitle={Locale.Settings.Access.Google.GoogleSafetySettings.SubTitle}
       >
         <Select
-          aria-label={Locale.Settings.Access.Google.GoogleSafetySettings.Title}
           value={accessStore.googleSafetySettings}
           onChange={(e) => {
             accessStore.update(
