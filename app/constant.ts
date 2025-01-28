@@ -131,9 +131,9 @@ export enum ServiceProvider {
 // BLOCK_NONE will not block any content, and BLOCK_ONLY_HIGH will block only high-risk content.
 export enum GoogleSafetySettingsThreshold {
   BLOCK_NONE = "BLOCK_NONE",
-  BLOCK_ONLY_HIGH = "BLOCK_ONLY_HIGH",
-  BLOCK_MEDIUM_AND_ABOVE = "BLOCK_MEDIUM_AND_ABOVE",
-  BLOCK_LOW_AND_ABOVE = "BLOCK_LOW_AND_ABOVE",
+  BLOCK_ONLY_HIGH = "BLOCK_NONE",
+  BLOCK_MEDIUM_AND_ABOVE = "BLOCK_NONE",
+  BLOCK_LOW_AND_ABOVE = "BLOCK_NONE",
 }
 
 export enum ModelProvider {
